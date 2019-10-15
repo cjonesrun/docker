@@ -9,5 +9,3 @@
 5. run: docker run langtree/<repo-name>
 
 6. push: docker push langtree/<reponame>
-
-
