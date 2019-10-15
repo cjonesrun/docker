@@ -22,7 +22,7 @@ ALTER TABLE public.widget_id_seq OWNER TO cj;
 
 -- db initial data
 
-INSERT INTO public.widget (id, name, description, datemodified) VALUES (1, 'anything', 'anything description', now());
-INSERT INTO public.widget (id, name, description, datemodified) VALUES (2, 'everything', 'everything description', now());
-INSERT INTO public.widget (id, name, description, datemodified) VALUES (3, 'something','something description', now());
-INSERT INTO public.widget (id, name, description, datemodified) VALUES (4, 'nothing','nothing description',now());
+INSERT INTO public.widget (id, name, description, datemodified) VALUES (nextval('widget_id_seq'), 'anything', 'anything description', now());
+INSERT INTO public.widget (id, name, description, datemodified) VALUES (nextval('widget_id_seq'), 'everything', 'everything description', now());
+INSERT INTO public.widget (id, name, description, datemodified) VALUES (nextval('widget_id_seq'), 'something','something description', now());
+INSERT INTO public.widget (id, name, description, datemodified) VALUES (nextval('widget_id_seq'), 'nothing','nothing description',now());
