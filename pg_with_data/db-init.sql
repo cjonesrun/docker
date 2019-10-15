@@ -1,8 +1,8 @@
 set client_encoding=UNICODE;
 
 -- drop tables
-DROP table public.widget;
-DROP SEQUENCE public.widget_id_seq;
+-- DROP table public.widget;
+-- DROP SEQUENCE public.widget_id_seq;
 
 -- create tables
 CREATE TABLE public.widget (
