@@ -6,8 +6,8 @@
 
 4. build: docker build -t langtree/<repo-name> .
 
-5. run: docker run langtree/<repo-name> .
+5. run: docker run langtree/<repo-name>
 
-6. push: docker push langtree/<reponame> .
+6. push: docker push langtree/<reponame>
 
 
