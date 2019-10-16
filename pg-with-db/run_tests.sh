@@ -4,11 +4,7 @@
 
 echo "------- RUNNING $0"
 
-echo "executing: docker-entrypoint.sh"
-docker-entrypoint.sh
-
-echo "executing psql"
-psql widget_repo cj -c "select count(*) from widget;"
+echo "executing docker image build tests"
 
 echo "------- COMPLETE $0"
 
