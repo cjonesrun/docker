@@ -8,4 +8,4 @@ psql widget_repo cj -c "select count(*) from widget;"
 
 echo "*** COMPLETE        ***"
 
-exit 1;
+exit 0;
