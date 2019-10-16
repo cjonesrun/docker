@@ -1,6 +1,5 @@
-services:
-  sut:
-    build: .
-    depends_on: 
-      - postgres
-    command: run_tests.sh
+sut:
+  build: .
+  depends_on:
+    - postgres
+  command: run_tests.sh
