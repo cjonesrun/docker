@@ -2,10 +2,10 @@
 
 # this script is run when the docker container is built
 
-echo "*** RUNNING run_tests.sh ***"
+echo "------- RUNNING $0"
 
 psql widget_repo cj -c "select count(*) from widget;"
 
-echo "*** COMPLETE        ***"
+echo "------- COMPLETE $0"
 
 exit 0;
