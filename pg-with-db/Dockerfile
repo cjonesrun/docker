@@ -4,4 +4,4 @@ ENV POSTGRES_PASSWORD cj
 ENV POSTGRES_DB widget_repo
 
 COPY ./docker-entrypoint-initdb.d/ /docker-entrypoint-initdb.d/
-COPY ./run_test.sh /usr/local/bin
+COPY ./run_tests.sh /usr/local/bin
