@@ -2,7 +2,7 @@
 
 set -x
 
-docker exec -it pg-with-db psql testing cj
+docker exec -it pg-with-db psql widget_repo cj
 
-# docker exec -it pg-with-db psql testing cj -c "select count(*) from widget;"
+# docker exec -it pg-with-db psql widget_repo cj -c "select count(*) from widget;"
 

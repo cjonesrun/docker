@@ -4,7 +4,7 @@
 
 echo "*** RUNNING test.sh ***"
 
-psql testing cj -c "select count(*) from widget;"
+psql widget_repo cj -c "select count(*) from widget;"
 
 echo "*** COMPLETE        ***"
 
