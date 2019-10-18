@@ -1,0 +1,11 @@
+extends index
+
+block more_content
+  p= JSON.stringify(widget)
+
+  table
+      tr
+        td= widget.id
+        td
+          a(href='/widgets/'+widget.id) #{widget.name}
+        td= widget.desc

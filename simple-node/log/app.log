@@ -1,0 +1,286 @@
+[2019-10-17T10:48:42.303] [INFO] default - adding /home/cjones/dev/personal/node/app1/src/routes/widgets.js
+[2019-10-17T10:48:42.304] [INFO] default - adding /home/cjones/dev/personal/node/app1/src/routes/widget_rest.js
+[2019-10-17T10:48:42.324] [INFO] default - setting routes
+[2019-10-17T10:48:42.324] [INFO] default - development logging enabled.
+[2019-10-17T10:48:42.330] [INFO] default - listening on port  8080  with pid  21231
+[2019-10-17T10:51:01.542] [INFO] default - adding /home/cjones/dev/docker/simple_node/src/routes/widgets.js
+[2019-10-17T10:51:01.543] [INFO] default - adding /home/cjones/dev/docker/simple_node/src/routes/widget_rest.js
+[2019-10-17T10:51:01.560] [INFO] default - setting routes
+[2019-10-17T10:51:01.560] [INFO] default - development logging enabled.
+[2019-10-17T10:51:01.565] [INFO] default - listening on port  8080  with pid  21806
+[2019-10-17T10:52:03.749] [INFO] default - adding /home/cjones/dev/docker/simple_node/src/routes/widgets.js
+[2019-10-17T10:52:03.750] [INFO] default - adding /home/cjones/dev/docker/simple_node/src/routes/widget_rest.js
+[2019-10-17T10:52:03.769] [INFO] default - setting routes
+[2019-10-17T10:52:03.769] [INFO] default - development logging enabled.
+[2019-10-17T10:52:03.772] [INFO] default - listening on port  8080  with pid  22053
+[2019-10-17T11:01:10.848] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:01:10.850] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:01:10.865] [INFO] default - setting routes
+[2019-10-17T11:01:10.865] [INFO] default - development logging enabled.
+[2019-10-17T11:01:10.869] [INFO] default - listening on port  8080  with pid  24444
+[2019-10-17T11:15:35.267] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:15:35.271] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:15:35.290] [INFO] default - setting routes
+[2019-10-17T11:15:35.290] [INFO] default - development logging enabled.
+[2019-10-17T11:15:35.295] [INFO] default - listening on port  8080  with pid  27742
+[2019-10-17T11:18:12.275] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:18:12.277] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:18:12.299] [INFO] default - setting routes
+[2019-10-17T11:18:12.299] [INFO] default - development logging enabled.
+[2019-10-17T11:18:12.303] [INFO] default - listening on port  8080  with pid  28238
+[2019-10-17T11:18:15.679] [DEBUG] default - looking up symbol :  HSBC.L
+[2019-10-17T11:18:15.679] [ERROR] default - error... looking up symbol :  HSBC.L
+[2019-10-17T11:18:36.272] [DEBUG] default - looking up symbol :  HSBC.L
+[2019-10-17T11:18:36.273] [ERROR] default - error... looking up symbol :  HSBC.L
+[2019-10-17T11:18:59.055] [DEBUG] default - looking up symbol :  APPL
+[2019-10-17T11:18:59.055] [ERROR] default - error... looking up symbol :  APPL
+[2019-10-17T11:23:16.739] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:23:16.741] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:23:16.761] [INFO] default - setting routes
+[2019-10-17T11:23:16.762] [INFO] default - development logging enabled.
+[2019-10-17T11:23:16.767] [INFO] default - listening on port  8080  with pid  28842
+[2019-10-17T11:23:32.337] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:23:32.338] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:23:32.364] [INFO] default - setting routes
+[2019-10-17T11:23:32.364] [INFO] default - development logging enabled.
+[2019-10-17T11:23:32.368] [INFO] default - listening on port  8080  with pid  28855
+[2019-10-17T11:35:11.877] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:35:11.878] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:35:11.894] [INFO] default - setting routes
+[2019-10-17T11:35:11.894] [INFO] default - development logging enabled.
+[2019-10-17T11:35:11.898] [INFO] default - listening on port  8080  with pid  31953
+[2019-10-17T11:42:54.790] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:42:54.792] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:42:54.808] [INFO] default - setting routes
+[2019-10-17T11:42:54.808] [INFO] default - development logging enabled.
+[2019-10-17T11:42:54.812] [INFO] default - listening on port  8080  with pid  32625
+[2019-10-17T11:43:43.259] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:43:43.260] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:43:43.278] [INFO] default - setting routes
+[2019-10-17T11:43:43.278] [INFO] default - development logging enabled.
+[2019-10-17T11:43:43.285] [INFO] default - listening on port  8080  with pid  32729
+[2019-10-17T11:44:31.210] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:44:31.211] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:44:31.229] [INFO] default - setting routes
+[2019-10-17T11:44:31.229] [INFO] default - development logging enabled.
+[2019-10-17T11:44:31.235] [INFO] default - listening on port  8080  with pid  461
+[2019-10-17T11:47:18.992] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:47:18.994] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:47:19.018] [INFO] default - setting routes
+[2019-10-17T11:47:19.018] [INFO] default - development logging enabled.
+[2019-10-17T11:47:19.026] [INFO] default - listening on port  8080  with pid  800
+[2019-10-17T11:48:00.957] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:48:00.958] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:48:00.974] [INFO] default - setting routes
+[2019-10-17T11:48:00.974] [INFO] default - development logging enabled.
+[2019-10-17T11:48:00.979] [INFO] default - listening on port  8080  with pid  931
+[2019-10-17T11:49:02.833] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:49:02.835] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:49:02.855] [INFO] default - setting routes
+[2019-10-17T11:49:02.855] [INFO] default - development logging enabled.
+[2019-10-17T11:49:02.861] [INFO] default - listening on port  8080  with pid  1088
+[2019-10-17T11:49:39.784] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:49:39.785] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:49:39.804] [INFO] default - setting routes
+[2019-10-17T11:49:39.804] [INFO] default - development logging enabled.
+[2019-10-17T11:49:39.810] [INFO] default - listening on port  8080  with pid  1168
+[2019-10-17T11:50:20.538] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widgets.js
+[2019-10-17T11:50:20.540] [INFO] default - adding /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js
+[2019-10-17T11:50:20.558] [INFO] default - setting routes
+[2019-10-17T11:50:20.558] [INFO] default - development logging enabled.
+[2019-10-17T11:50:20.563] [INFO] default - listening on port  8080  with pid  1343
+[2019-10-17T17:26:26.169] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T17:26:26.171] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T17:26:26.187] [INFO] default - setting routes
+[2019-10-17T17:26:26.187] [INFO] default - development logging enabled.
+[2019-10-17T17:26:26.193] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T17:29:23.012] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T17:29:23.014] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T17:29:23.030] [INFO] default - setting routes
+[2019-10-17T17:29:23.030] [INFO] default - development logging enabled.
+[2019-10-17T17:29:23.035] [INFO] default - listening on port  8080  with pid  31
+[2019-10-17T17:32:31.020] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T17:32:31.021] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T17:32:31.037] [INFO] default - setting routes
+[2019-10-17T17:32:31.037] [INFO] default - development logging enabled.
+[2019-10-17T17:32:31.043] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T17:34:27.911] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T17:34:27.913] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T17:34:27.928] [INFO] default - setting routes
+[2019-10-17T17:34:27.928] [INFO] default - development logging enabled.
+[2019-10-17T17:34:27.936] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T17:40:38.747] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T17:40:38.759] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T17:40:38.828] [INFO] default - setting routes
+[2019-10-17T17:40:38.830] [INFO] default - development logging enabled.
+[2019-10-17T17:40:38.857] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T17:44:04.751] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T17:44:04.752] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T17:44:04.768] [INFO] default - setting routes
+[2019-10-17T17:44:04.768] [INFO] default - development logging enabled.
+[2019-10-17T17:44:04.778] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T17:52:21.192] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T17:52:21.193] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T17:52:21.210] [INFO] default - setting routes
+[2019-10-17T17:52:21.210] [INFO] default - development logging enabled.
+[2019-10-17T17:52:21.220] [INFO] default - listening on port  8080  with pid  31
+[2019-10-17T17:56:10.435] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T17:56:10.436] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T17:56:10.454] [INFO] default - setting routes
+[2019-10-17T17:56:10.454] [INFO] default - development logging enabled.
+[2019-10-17T17:56:10.463] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T17:57:38.248] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T17:57:38.249] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T17:57:38.269] [INFO] default - setting routes
+[2019-10-17T17:57:38.270] [INFO] default - development logging enabled.
+[2019-10-17T17:57:38.277] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T17:58:40.087] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T17:58:40.095] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T17:58:40.121] [INFO] default - setting routes
+[2019-10-17T17:58:40.121] [INFO] default - development logging enabled.
+[2019-10-17T17:58:40.135] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T17:59:11.341] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T17:59:11.343] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T17:59:11.359] [INFO] default - setting routes
+[2019-10-17T17:59:11.359] [INFO] default - development logging enabled.
+[2019-10-17T17:59:11.365] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T18:01:44.309] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:01:44.310] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:01:44.327] [INFO] default - setting routes
+[2019-10-17T18:01:44.327] [INFO] default - development logging enabled.
+[2019-10-17T18:01:44.334] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T18:02:00.173] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:02:00.174] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:02:00.189] [INFO] default - setting routes
+[2019-10-17T18:02:00.189] [INFO] default - development logging enabled.
+[2019-10-17T18:02:00.193] [INFO] default - listening on port  8080  with pid  40
+[2019-10-17T18:11:04.724] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:11:04.726] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:11:04.746] [INFO] default - setting routes
+[2019-10-17T18:11:04.746] [INFO] default - development logging enabled.
+[2019-10-17T18:11:04.759] [INFO] default - listening on port  8080  with pid  30
+[2019-10-17T18:12:35.996] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:12:35.997] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:12:36.014] [INFO] default - setting routes
+[2019-10-17T18:12:36.014] [INFO] default - development logging enabled.
+[2019-10-17T18:12:36.024] [INFO] default - listening on port  8080  with pid  30
+[2019-10-17T18:13:26.264] [DEBUG] default - looking up symbol :  APPL
+[2019-10-17T18:13:26.264] [ERROR] default - error... looking up symbol :  APPL
+[2019-10-17T18:14:02.026] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:14:02.028] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:14:02.051] [INFO] default - setting routes
+[2019-10-17T18:14:02.052] [INFO] default - development logging enabled.
+[2019-10-17T18:14:02.063] [INFO] default - listening on port  8080  with pid  30
+[2019-10-17T18:14:12.129] [DEBUG] default - looking up symbol :  APPL
+[2019-10-17T18:14:12.129] [ERROR] default - error... looking up symbol :  APPL
+[2019-10-17T18:16:12.137] [DEBUG] default - looking up symbol :  APPL
+[2019-10-17T18:16:12.138] [ERROR] default - error... looking up symbol :  APPL
+[2019-10-17T18:16:37.227] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:16:37.229] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:16:37.252] [INFO] default - setting routes
+[2019-10-17T18:16:37.253] [INFO] default - development logging enabled.
+[2019-10-17T18:16:37.274] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T18:33:45.895] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:33:45.897] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:33:45.916] [INFO] default - setting routes
+[2019-10-17T18:33:45.916] [INFO] default - development logging enabled.
+[2019-10-17T18:33:45.921] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T18:33:51.363] [DEBUG] default - looking up symbol :  HSBC.L
+[2019-10-17T18:33:51.363] [ERROR] default - error... looking up symbol :  HSBC.L
+[2019-10-17T18:34:20.706] [DEBUG] default - looking up symbol :  msft
+[2019-10-17T18:34:20.706] [ERROR] default - error... looking up symbol :  msft
+[2019-10-17T18:34:36.982] [DEBUG] default - looking up symbol :  MSFT
+[2019-10-17T18:34:36.982] [ERROR] default - error... looking up symbol :  MSFT
+[2019-10-17T18:44:39.954] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:44:39.956] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:44:39.974] [INFO] default - setting routes
+[2019-10-17T18:44:39.974] [INFO] default - development logging enabled.
+[2019-10-17T18:44:39.979] [INFO] default - listening on port  8080  with pid  505
+[2019-10-17T18:44:43.729] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:44:43.731] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:44:43.747] [INFO] default - setting routes
+[2019-10-17T18:44:43.748] [INFO] default - development logging enabled.
+[2019-10-17T18:44:43.752] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T18:44:50.264] [DEBUG] default - looking up username :  null
+[2019-10-17T18:44:50.264] [ERROR] default - error... looking up symbol :  Bret
+[2019-10-17T18:45:38.599] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:45:38.600] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:45:38.619] [INFO] default - setting routes
+[2019-10-17T18:45:38.619] [INFO] default - development logging enabled.
+[2019-10-17T18:45:38.629] [INFO] default - listening on port  8080  with pid  30
+[2019-10-17T18:45:42.486] [DEBUG] default - looking up username :  null
+[2019-10-17T18:45:42.486] [ERROR] default - error... looking up symbol :  Bret
+[2019-10-17T18:49:27.998] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:49:27.999] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:49:28.016] [INFO] default - setting routes
+[2019-10-17T18:49:28.016] [INFO] default - development logging enabled.
+[2019-10-17T18:49:28.026] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T18:49:32.104] [DEBUG] default - looking up username :  null
+[2019-10-17T18:49:32.104] [ERROR] default - error... looking up symbol :  Bret
+[2019-10-17T18:50:34.400] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:50:34.402] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:50:34.421] [INFO] default - setting routes
+[2019-10-17T18:50:34.421] [INFO] default - development logging enabled.
+[2019-10-17T18:50:34.431] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T18:50:40.275] [DEBUG] default - looking up username :  null
+[2019-10-17T18:50:40.275] [ERROR] default - error... looking up symbol :  Bret
+[2019-10-17T18:51:49.944] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:51:49.945] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:51:49.963] [INFO] default - setting routes
+[2019-10-17T18:51:49.963] [INFO] default - development logging enabled.
+[2019-10-17T18:51:49.969] [INFO] default - listening on port  8080  with pid  30
+[2019-10-17T18:51:53.977] [DEBUG] default - looking up username :  null
+[2019-10-17T18:51:53.977] [ERROR] default - error... looking up symbol :  Bret
+[2019-10-17T18:53:53.398] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:53:53.399] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:53:53.415] [INFO] default - setting routes
+[2019-10-17T18:53:53.415] [INFO] default - development logging enabled.
+[2019-10-17T18:53:53.422] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T18:53:58.272] [DEBUG] default - looking up username :  null
+[2019-10-17T18:53:58.272] [ERROR] default - error... looking up symbol :  Bret
+[2019-10-17T18:55:18.055] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:55:18.056] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:55:18.073] [INFO] default - setting routes
+[2019-10-17T18:55:18.073] [INFO] default - development logging enabled.
+[2019-10-17T18:55:18.079] [INFO] default - listening on port  8080  with pid  30
+[2019-10-17T18:55:21.224] [DEBUG] default - looking up username :  null
+[2019-10-17T18:55:21.224] [ERROR] default - error... looking up symbol :  Bret
+[2019-10-17T18:55:52.411] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T18:55:52.413] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T18:55:52.438] [INFO] default - setting routes
+[2019-10-17T18:55:52.438] [INFO] default - development logging enabled.
+[2019-10-17T18:55:52.444] [INFO] default - listening on port  8080  with pid  30
+[2019-10-17T18:56:09.180] [DEBUG] default - looking up username :  null
+[2019-10-17T18:56:09.180] [ERROR] default - error... looking up symbol :  Bret
+[2019-10-17T19:17:14.994] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T19:17:14.995] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T19:17:15.010] [INFO] default - setting routes
+[2019-10-17T19:17:15.010] [INFO] default - development logging enabled.
+[2019-10-17T19:17:15.016] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T19:17:28.854] [DEBUG] default - looking up widget by name:  null
+[2019-10-17T19:17:29.335] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T19:17:29.336] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T19:17:29.361] [INFO] default - setting routes
+[2019-10-17T19:17:29.361] [INFO] default - development logging enabled.
+[2019-10-17T19:17:29.374] [INFO] default - listening on port  8080  with pid  40
+[2019-10-17T19:18:22.000] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T19:18:22.001] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T19:18:22.027] [INFO] default - setting routes
+[2019-10-17T19:18:22.027] [INFO] default - development logging enabled.
+[2019-10-17T19:18:22.035] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T19:18:33.350] [DEBUG] default - looking up widget by name:  null
+[2019-10-17T19:20:17.285] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T19:20:17.286] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T19:20:17.322] [INFO] default - setting routes
+[2019-10-17T19:20:17.322] [INFO] default - development logging enabled.
+[2019-10-17T19:20:17.341] [INFO] default - listening on port  8080  with pid  30
+[2019-10-17T19:20:23.172] [DEBUG] default - looking up widget by name:  
+[2019-10-17T19:20:29.380] [DEBUG] default - looking up widget by name:  anything
+[2019-10-17T19:20:59.001] [DEBUG] default - looking up widget by name:  something
+[2019-10-17T19:22:06.021] [INFO] default - adding /app/src/routes/widgets.js
+[2019-10-17T19:22:06.022] [INFO] default - adding /app/src/routes/widget_rest.js
+[2019-10-17T19:22:06.038] [INFO] default - setting routes
+[2019-10-17T19:22:06.039] [INFO] default - development logging enabled.
+[2019-10-17T19:22:06.044] [INFO] default - listening on port  8080  with pid  29
+[2019-10-17T19:22:17.777] [DEBUG] default - looking up widget by name:  anything
+[2019-10-17T19:22:25.210] [DEBUG] default - looking up widget by name:  everything

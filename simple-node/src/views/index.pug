@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1
+    a(href=url)= title
+ 
+  table
+    tr
+      td='get all widgets'
+      td='/rest/widgets'
+      td
+        a(href='/rest/widgets/') #{'get all'}
+    tr
+      td='get widget by id'
+      td='/rest/widgets/:id'
+      td
+        a(href='/rest/widgets/1') #{'get by id'}
+    tr
+      td='get widget by name'
+      td='/rest/widgets/name/:name'
+      td
+        a(href='/rest/widgets/name/anything') #{'get by name'}
+ 
+  block more_content

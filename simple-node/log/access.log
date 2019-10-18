@@ -1,0 +1,735 @@
+[2019-10-17T10:49:02.808] [INFO] access - ::1 - - "GET / HTTP/1.1" 200 524 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:49:02.842] [INFO] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 200 46 "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:49:02.843] [INFO] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 200 33 "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:49:07.332] [INFO] access - ::1 - - "GET /page1 HTTP/1.1" 200 755 "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:49:07.350] [WARN] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:49:07.350] [WARN] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:51:38.591] [WARN] access - ::1 - - "GET /page1 HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:51:38.613] [INFO] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 200 46 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:51:38.617] [INFO] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 200 33 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:51:52.634] [WARN] access - ::1 - - "GET /page1 HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:51:52.650] [WARN] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:51:52.652] [WARN] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:51:57.167] [ERROR] access - Something went wrong: { TypeError: /home/cjones/dev/docker/simple_node/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= widget.id
+    9|         td
+    10|           a(href='/widgets/'+widget.id) #{widget.name}
+    11|         td= widget.desc
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/home/cjones/dev/docker/simple_node/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:72:64)
+    at template (eval at wrap (/home/cjones/dev/docker/simple_node/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:86:204)
+    at Object.exports.renderFile (/home/cjones/dev/docker/simple_node/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/home/cjones/dev/docker/simple_node/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/home/cjones/dev/docker/simple_node/node_modules/pug/lib/index.js:464:11)
+    at View.render (/home/cjones/dev/docker/simple_node/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/cjones/dev/docker/simple_node/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/cjones/dev/docker/simple_node/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/cjones/dev/docker/simple_node/node_modules/express/lib/response.js:1008:7)
+    at /home/cjones/dev/docker/simple_node/src/routes/widgets.js:37:9
+  path: '/home/cjones/dev/docker/simple_node/src/views/page2.pug' }
+[2019-10-17T10:51:57.191] [ERROR] access - ::1 - - "GET /page2 HTTP/1.1" 500 780 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:51:57.209] [WARN] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T10:51:57.209] [WARN] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:01:15.387] [WARN] access - ::1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:01:15.412] [WARN] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:01:15.415] [WARN] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:15:52.979] [WARN] access - ::1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:15:53.001] [INFO] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 200 46 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:15:53.004] [INFO] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 200 33 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:15:59.242] [ERROR] access - Something went wrong: ReferenceError: log is not defined
+    at /home/cjones/dev/docker/simple-node/src/routes/widgets.js:22:5
+    at Layer.handle [as handle_request] (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:47:12)
+[2019-10-17T11:15:59.265] [ERROR] access - ::1 - - "POST /page2 HTTP/1.1" 500 525 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:15:59.296] [WARN] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:15:59.298] [WARN] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:18:14.277] [WARN] access - ::1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:18:14.299] [WARN] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:18:14.301] [WARN] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:18:30.578] [WARN] access - ::1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:18:30.588] [WARN] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:18:30.591] [WARN] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:18:53.773] [WARN] access - ::1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:18:53.783] [WARN] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:18:53.789] [WARN] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:21:15.143] [ERROR] access - Something went wrong: { TypeError: /home/cjones/dev/docker/simple-node/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= widget.id
+    9|         td
+    10|           a(href='/widgets/'+widget.id) #{widget.name}
+    11|         td= widget.desc
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/home/cjones/dev/docker/simple-node/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:72:64)
+    at template (eval at wrap (/home/cjones/dev/docker/simple-node/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:86:204)
+    at Object.exports.renderFile (/home/cjones/dev/docker/simple-node/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/home/cjones/dev/docker/simple-node/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/home/cjones/dev/docker/simple-node/node_modules/pug/lib/index.js:464:11)
+    at View.render (/home/cjones/dev/docker/simple-node/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/cjones/dev/docker/simple-node/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/cjones/dev/docker/simple-node/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/cjones/dev/docker/simple-node/node_modules/express/lib/response.js:1008:7)
+    at /home/cjones/dev/docker/simple-node/src/routes/widgets.js:37:9
+  path: '/home/cjones/dev/docker/simple-node/src/views/page2.pug' }
+[2019-10-17T11:21:15.162] [ERROR] access - ::1 - - "GET /page2 HTTP/1.1" 500 780 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:21:15.172] [WARN] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:21:15.176] [WARN] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:22:25.568] [ERROR] access - Something went wrong: TypeError: repo.getWidgets is not a function
+    at /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js:13:10
+    at Layer.handle [as handle_request] (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:47:12)
+[2019-10-17T11:22:25.583] [ERROR] access - ::1 - - "GET /rest/widgets HTTP/1.1" 500 540 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:22:25.605] [WARN] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/rest/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:22:25.607] [WARN] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/rest/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:35:20.246] [INFO] access - ::1 - - "GET /rest/widgets HTTP/1.1" 200 369 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:42:37.658] [WARN] access - ::1 - - "GET /rest/widgets HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:42:53.961] [ERROR] access - Something went wrong: ReferenceError: db is not defined
+    at /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js:23:31
+    at Layer.handle [as handle_request] (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:281:22
+    at param (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:354:14)
+    at param (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:410:3)
+    at next (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:275:10)
+[2019-10-17T11:42:54.361] [ERROR] access - ::1 - - "GET /rest/widgets/1 HTTP/1.1" 500 524 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:43:53.178] [WARN] access - ::1 - - "GET /rest/widgets HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:43:55.762] [ERROR] access - Something went wrong: TypeError: repo.getWidget is not a function
+    at /home/cjones/dev/docker/simple-node/src/routes/widget_rest.js:23:10
+    at Layer.handle [as handle_request] (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:281:22
+    at param (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:354:14)
+    at param (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:410:3)
+    at next (/home/cjones/dev/docker/simple-node/node_modules/express/lib/router/index.js:275:10)
+[2019-10-17T11:43:56.004] [ERROR] access - ::1 - - "GET /rest/widgets/1 HTTP/1.1" 500 539 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:43:56.024] [INFO] access - ::1 - - "GET /static/css/style.css HTTP/1.1" 200 46 "http://localhost:8080/rest/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:43:56.026] [INFO] access - ::1 - - "GET /static/js/global.js HTTP/1.1" 200 33 "http://localhost:8080/rest/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:44:35.725] [INFO] access - ::1 - - "GET /rest/widgets/1 HTTP/1.1" 200 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:44:44.771] [INFO] access - ::1 - - "GET /rest/widgets/ HTTP/1.1" 200 369 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:46:30.726] [INFO] access - ::1 - - "GET /rest/widgets/1 HTTP/1.1" 200 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:46:35.747] [INFO] access - ::1 - - "GET /rest/widgets/2 HTTP/1.1" 200 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:46:38.404] [INFO] access - ::1 - - "GET /rest/widgets/3 HTTP/1.1" 200 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:46:40.796] [INFO] access - ::1 - - "GET /rest/widgets/4 HTTP/1.1" 200 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:47:23.068] [INFO] access - ::1 - - "GET /rest/widgets/4 HTTP/1.1" 200 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:48:05.536] [INFO] access - ::1 - - "GET /rest/widgets/3 HTTP/1.1" 200 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:49:08.746] [INFO] access - ::1 - - "GET /rest/widgets/3 HTTP/1.1" 200 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:49:42.486] [INFO] access - ::1 - - "GET /rest/widgets/3 HTTP/1.1" 200 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:49:47.049] [INFO] access - ::1 - - "GET /rest/widgets/2 HTTP/1.1" 200 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:49:49.725] [INFO] access - ::1 - - "GET /rest/widgets/1 HTTP/1.1" 200 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:50:24.342] [WARN] access - ::1 - - "GET /rest/widgets HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:50:26.954] [INFO] access - ::1 - - "GET /rest/widgets/1 HTTP/1.1" 200 90 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:50:29.584] [INFO] access - ::1 - - "GET /rest/widgets/2 HTTP/1.1" 200 94 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:50:31.690] [WARN] access - ::1 - - "GET /rest/widgets/2 HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:50:34.412] [INFO] access - ::1 - - "GET /rest/widgets/21 HTTP/1.1" 200 2 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T11:56:32.323] [WARN] access - ::1 - - "GET /rest/widgets/1 HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:26:58.557] [WARN] access - ::ffff:172.19.0.1 - - "GET /rest/widgets HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:27:01.493] [WARN] access - ::ffff:172.19.0.1 - - "GET /rest/widgets HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:27:24.536] [INFO] access - ::ffff:172.19.0.1 - - "GET /widgets HTTP/1.1" 200 923 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:27:24.572] [INFO] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 200 46 "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:27:24.574] [INFO] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 200 33 "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:27:31.186] [INFO] access - ::ffff:172.19.0.1 - - "GET /widgets/1 HTTP/1.1" 200 667 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:27:31.200] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:27:31.202] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:27:49.886] [WARN] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:27:49.903] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:27:49.907] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:27:51.370] [ERROR] access - Something went wrong: TypeError: /app/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= widget.id
+    9|         td
+    10|           a(href='/widgets/'+widget.id) #{widget.name}
+    11|         td= widget.desc
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:72:64)
+    at template (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:86:204)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/app/node_modules/pug/lib/index.js:464:11)
+    at View.render (/app/node_modules/express/lib/view.js:135:8)
+    at tryRender (/app/node_modules/express/lib/application.js:640:10)
+    at Function.render (/app/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/app/node_modules/express/lib/response.js:1008:7)
+    at /app/src/routes/widgets.js:37:9 {
+  path: '/app/src/views/page2.pug'
+}
+[2019-10-17T17:27:51.391] [ERROR] access - ::ffff:172.19.0.1 - - "GET /page2 HTTP/1.1" 500 749 "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:27:51.406] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:27:51.406] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:28:57.846] [ERROR] access - Something went wrong: Error: Not Found
+    at /app/src/app.js:38:15
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/app/node_modules/express/lib/router/index.js:317:13)
+    at /app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/app/node_modules/express/lib/router/index.js:275:10)
+    at /app/node_modules/express/lib/router/index.js:635:15
+    at next (/app/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/app/node_modules/express/lib/router/index.js:174:3)
+    at router (/app/node_modules/express/lib/router/index.js:47:12) {
+  status: 404
+}
+[2019-10-17T17:28:57.870] [ERROR] access - ::ffff:172.19.0.1 - - "GET /page3 HTTP/1.1" 404 519 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:28:57.886] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:28:57.889] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:29:30.303] [INFO] access - ::ffff:172.19.0.1 - - "GET /page3 HTTP/1.1" 200 755 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:29:30.313] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:29:30.316] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:29:32.605] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:29:32.618] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:29:32.619] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:29:33.234] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:29:33.246] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:29:33.248] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:29:36.821] [WARN] access - ::ffff:172.19.0.1 - - "GET /page3 HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:29:36.846] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:29:36.847] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:31:14.504] [WARN] access - ::ffff:172.19.0.1 - - "GET /page3 HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:31:14.560] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:31:14.567] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:31:16.991] [WARN] access - ::ffff:172.19.0.1 - - "GET /page3 HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:31:17.003] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:31:17.005] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:36.536] [ERROR] access - Something went wrong: Error: Not Found
+    at /app/src/app.js:38:15
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/app/node_modules/express/lib/router/index.js:317:13)
+    at /app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/app/node_modules/express/lib/router/index.js:275:10)
+    at /app/node_modules/express/lib/router/index.js:635:15
+    at next (/app/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/app/node_modules/express/lib/router/index.js:174:3)
+    at router (/app/node_modules/express/lib/router/index.js:47:12) {
+  status: 404
+}
+[2019-10-17T17:32:36.770] [ERROR] access - ::ffff:172.19.0.1 - - "GET /page3 HTTP/1.1" 404 519 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:36.804] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:36.806] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:41.358] [INFO] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 200 520 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:41.392] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:41.393] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:47.464] [INFO] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 200 751 "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:47.479] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:47.480] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:48.701] [WARN] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:48.716] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:48.717] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:49.587] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:49.601] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:49.604] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:51.658] [ERROR] access - Something went wrong: TypeError: /app/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= widget.id
+    9|         td
+    10|           a(href='/widgets/'+widget.id) #{widget.name}
+    11|         td= widget.desc
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:72:64)
+    at template (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:86:204)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/app/node_modules/pug/lib/index.js:464:11)
+    at View.render (/app/node_modules/express/lib/view.js:135:8)
+    at tryRender (/app/node_modules/express/lib/application.js:640:10)
+    at Function.render (/app/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/app/node_modules/express/lib/response.js:1008:7)
+    at /app/src/routes/widgets.js:38:9 {
+  path: '/app/src/views/page2.pug'
+}
+[2019-10-17T17:32:51.676] [ERROR] access - ::ffff:172.19.0.1 - - "GET /page2 HTTP/1.1" 500 749 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:51.706] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:51.707] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:52.628] [WARN] access - ::ffff:172.19.0.1 - - "GET /widgets HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:52.642] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:52.643] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:53.648] [WARN] access - ::ffff:172.19.0.1 - - "GET /widgets/1 HTTP/1.1" 304 - "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:53.665] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:53.666] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:54.671] [WARN] access - ::ffff:172.19.0.1 - - "GET /widgets/1 HTTP/1.1" 304 - "http://localhost:8080/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:54.692] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:54.693] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:57.138] [INFO] access - ::ffff:172.19.0.1 - - "GET /widgets/3 HTTP/1.1" 200 669 "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:57.156] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/widgets/3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:32:57.157] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/widgets/3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:40:47.563] [INFO] access - ::ffff:172.19.0.1 - - "GET /rest/widgets HTTP/1.1" 200 369 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:40:55.963] [INFO] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/name/anything HTTP/1.1" 200 90 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:40:59.978] [INFO] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/name/something HTTP/1.1" 200 92 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:41:03.413] [INFO] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/name/everything HTTP/1.1" 200 94 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:41:07.267] [INFO] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/name/everything%20d HTTP/1.1" 200 2 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:44:13.547] [INFO] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/name/everything HTTP/1.1" 200 94 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:52:26.958] [WARN] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/name/everything HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:52:29.606] [INFO] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/1 HTTP/1.1" 200 90 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:54:59.771] [WARN] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:54:59.801] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:54:59.802] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:55:02.184] [WARN] access - ::ffff:172.19.0.1 - - "GET /widgets HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:55:02.200] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:55:02.201] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:55:04.095] [WARN] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 304 - "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:55:04.112] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:55:04.113] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:55:06.149] [WARN] access - ::ffff:172.19.0.1 - - "GET /widgets HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:55:06.170] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:55:06.175] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:56:15.386] [WARN] access - ::ffff:172.19.0.1 - - "GET /widgets HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:56:15.404] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:56:15.414] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:56:18.636] [INFO] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 200 569 "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:56:18.650] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:56:18.651] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:57:42.634] [ERROR] access - Something went wrong: {
+  code: 'PUG:NO_END_BRACKET',
+  msg: 'The end of the string reached with no closing bracket ) found.',
+  line: 16,
+  column: 1,
+  filename: '/app/src/views/index.pug'
+}
+[2019-10-17T17:57:42.678] [ERROR] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 500 661 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:57:42.695] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:57:42.696] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:58:40.844] [ERROR] access - Something went wrong: TypeError: /app/src/views/index.pug:12
+    10|       td='/rest/widgets'
+    11|       td
+  > 12|         a(href='/rest/widgets/') #{widget.name}
+    13| 
+    14|  
+    15|   block more_content
+
+Cannot read property 'name' of undefined
+    at eval (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:77:64)
+    at template (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:79:72)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/app/node_modules/pug/lib/index.js:464:11)
+    at View.render (/app/node_modules/express/lib/view.js:135:8)
+    at tryRender (/app/node_modules/express/lib/application.js:640:10)
+    at Function.render (/app/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/app/node_modules/express/lib/response.js:1008:7)
+    at /app/src/routes/widgets.js:14:9 {
+  path: '/app/src/views/index.pug'
+}
+[2019-10-17T17:58:40.867] [ERROR] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 500 733 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:58:40.888] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:58:40.896] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:59:17.553] [INFO] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 200 635 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:59:17.573] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:59:17.574] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T17:59:44.161] [INFO] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/ HTTP/1.1" 200 369 "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:01:51.675] [WARN] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/ HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:01:54.439] [WARN] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/1 HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:02:04.159] [INFO] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/name/anything HTTP/1.1" 200 90 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:08:49.809] [WARN] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 304 - "http://localhost:8080/page3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:08:49.834] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:08:49.842] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:11:14.872] [INFO] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 200 874 "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:11:14.897] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:11:14.899] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:11:16.600] [WARN] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/ HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:11:19.446] [WARN] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/1 HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:11:22.238] [WARN] access - ::ffff:172.19.0.1 - - "GET /rest/widgets/name/anything HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:41.319] [INFO] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 200 876 "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:41.335] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:41.337] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:44.777] [INFO] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 200 1105 "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:44.802] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:44.804] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:45.473] [ERROR] access - Something went wrong: TypeError: /app/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= widget.id
+    9|         td
+    10|           a(href='/widgets/'+widget.id) #{widget.name}
+    11|         td= widget.desc
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:122:64)
+    at template (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:136:204)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/app/node_modules/pug/lib/index.js:464:11)
+    at View.render (/app/node_modules/express/lib/view.js:135:8)
+    at tryRender (/app/node_modules/express/lib/application.js:640:10)
+    at Function.render (/app/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/app/node_modules/express/lib/response.js:1008:7)
+    at /app/src/routes/widgets.js:38:9 {
+  path: '/app/src/views/page2.pug'
+}
+[2019-10-17T18:12:45.486] [ERROR] access - ::ffff:172.19.0.1 - - "GET /page2 HTTP/1.1" 500 749 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:45.499] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:45.502] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:47.126] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:47.188] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:47.189] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:49.460] [ERROR] access - Something went wrong: TypeError: /app/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= widget.id
+    9|         td
+    10|           a(href='/widgets/'+widget.id) #{widget.name}
+    11|         td= widget.desc
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:122:64)
+    at template (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:136:204)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/app/node_modules/pug/lib/index.js:464:11)
+    at View.render (/app/node_modules/express/lib/view.js:135:8)
+    at tryRender (/app/node_modules/express/lib/application.js:640:10)
+    at Function.render (/app/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/app/node_modules/express/lib/response.js:1008:7)
+    at /app/src/routes/widgets.js:38:9 {
+  path: '/app/src/views/page2.pug'
+}
+[2019-10-17T18:12:49.480] [ERROR] access - ::ffff:172.19.0.1 - - "GET /page2 HTTP/1.1" 500 749 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:49.499] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:49.500] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:50.412] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:50.447] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:50.448] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:53.054] [WARN] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:53.069] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:53.071] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:54.204] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:54.221] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:12:54.223] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:14:06.040] [WARN] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:14:06.057] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:14:06.058] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:14:09.111] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:14:09.135] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:14:09.142] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:16:40.877] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:16:40.897] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:16:40.900] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:33:49.670] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:33:49.690] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:33:49.691] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:33:51.634] [ERROR] access - Something went wrong: TypeError: /app/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= widget.id
+    9|         td
+    10|           a(href='/widgets/'+widget.id) #{widget.name}
+    11|         td= widget.desc
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:122:64)
+    at template (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:136:204)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/app/node_modules/pug/lib/index.js:464:11)
+    at View.render (/app/node_modules/express/lib/view.js:135:8)
+    at tryRender (/app/node_modules/express/lib/application.js:640:10)
+    at Function.render (/app/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/app/node_modules/express/lib/response.js:1008:7)
+    at Request._callback (/app/src/routes/widgets.js:36:15) {
+  path: '/app/src/views/page2.pug'
+}
+[2019-10-17T18:33:51.654] [ERROR] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 500 749 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:33:51.678] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:33:51.679] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:34:20.936] [ERROR] access - Something went wrong: TypeError: /app/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= widget.id
+    9|         td
+    10|           a(href='/widgets/'+widget.id) #{widget.name}
+    11|         td= widget.desc
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:122:64)
+    at template (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:136:204)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/app/node_modules/pug/lib/index.js:464:11)
+    at View.render (/app/node_modules/express/lib/view.js:135:8)
+    at tryRender (/app/node_modules/express/lib/application.js:640:10)
+    at Function.render (/app/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/app/node_modules/express/lib/response.js:1008:7)
+    at Request._callback (/app/src/routes/widgets.js:36:15) {
+  path: '/app/src/views/page2.pug'
+}
+[2019-10-17T18:34:20.966] [ERROR] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 500 749 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:34:20.991] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:34:20.992] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:34:34.185] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:34:34.199] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:34:34.201] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:34:37.750] [ERROR] access - Something went wrong: TypeError: /app/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= widget.id
+    9|         td
+    10|           a(href='/widgets/'+widget.id) #{widget.name}
+    11|         td= widget.desc
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:122:64)
+    at template (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:136:204)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/app/node_modules/pug/lib/index.js:464:11)
+    at View.render (/app/node_modules/express/lib/view.js:135:8)
+    at tryRender (/app/node_modules/express/lib/application.js:640:10)
+    at Function.render (/app/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/app/node_modules/express/lib/response.js:1008:7)
+    at Request._callback (/app/src/routes/widgets.js:36:15) {
+  path: '/app/src/views/page2.pug'
+}
+[2019-10-17T18:34:37.771] [ERROR] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 500 749 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:34:37.795] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:34:37.796] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:40:02.173] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:40:02.187] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:40:02.188] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:44:48.513] [INFO] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 200 1090 "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:44:48.540] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:44:48.544] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:44:50.652] [ERROR] access - Something went wrong: TypeError: /app/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= widget.id
+    9|         td
+    10|           a(href='/widgets/'+widget.id) #{widget.name}
+    11|         td= widget.desc
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:122:64)
+    at template (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:136:204)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/app/node_modules/pug/lib/index.js:464:11)
+    at View.render (/app/node_modules/express/lib/view.js:135:8)
+    at tryRender (/app/node_modules/express/lib/application.js:640:10)
+    at Function.render (/app/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/app/node_modules/express/lib/response.js:1008:7)
+    at Request._callback (/app/src/routes/widgets.js:32:15) {
+  path: '/app/src/views/page2.pug'
+}
+[2019-10-17T18:44:50.693] [ERROR] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 500 749 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:44:50.762] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:44:50.763] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:45:41.635] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:45:41.669] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:45:41.671] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:45:42.844] [ERROR] access - Something went wrong: TypeError: /app/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= widget.id
+    9|         td
+    10|           a(href='/widgets/'+widget.id) #{widget.name}
+    11|         td= widget.desc
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:122:64)
+    at template (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:136:204)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/app/node_modules/pug/lib/index.js:464:11)
+    at View.render (/app/node_modules/express/lib/view.js:135:8)
+    at tryRender (/app/node_modules/express/lib/application.js:640:10)
+    at Function.render (/app/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/app/node_modules/express/lib/response.js:1008:7)
+    at Request._callback (/app/src/routes/widgets.js:32:15) {
+  path: '/app/src/views/page2.pug'
+}
+[2019-10-17T18:45:42.874] [ERROR] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 500 749 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:45:42.906] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:45:42.908] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:49:29.209] [WARN] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:49:29.243] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:49:29.244] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:49:30.982] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:49:31.013] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:49:31.015] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:49:32.448] [INFO] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 200 1877 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:49:32.531] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:49:32.541] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:50:37.067] [WARN] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:50:37.099] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:50:37.101] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:50:39.245] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:50:39.278] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:50:39.279] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:50:40.635] [INFO] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 200 999 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:50:40.670] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:50:40.671] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:51:51.037] [ERROR] access - Something went wrong: TypeError: /app/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= userdata.id
+    9|         td
+    10|           a(href='/widgets/'+userdata.id) #{userdata.username}
+    11|         td= userdata.name
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:122:66)
+    at template (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:136:207)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/app/node_modules/pug/lib/index.js:464:11)
+    at View.render (/app/node_modules/express/lib/view.js:135:8)
+    at tryRender (/app/node_modules/express/lib/application.js:640:10)
+    at Function.render (/app/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/app/node_modules/express/lib/response.js:1008:7)
+    at /app/src/routes/widgets.js:38:9 {
+  path: '/app/src/views/page2.pug'
+}
+[2019-10-17T18:51:51.065] [ERROR] access - ::ffff:172.19.0.1 - - "GET /page2 HTTP/1.1" 500 761 "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:51:51.108] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:51:51.109] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:51:52.803] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:51:52.831] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:51:52.837] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:51:54.335] [INFO] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 200 999 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:51:54.371] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:51:54.374] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:53:57.476] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:53:57.521] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:53:57.523] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:53:58.657] [INFO] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 200 1013 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:53:58.701] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:53:58.702] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:55:20.529] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:55:20.559] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:55:20.564] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:55:21.595] [INFO] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 200 1040 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:55:21.632] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:55:21.634] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:56:08.076] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:56:08.120] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:56:08.122] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:56:09.538] [INFO] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 200 1746 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:56:09.565] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:56:09.566] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:56:18.399] [ERROR] access - Something went wrong: TypeError: /app/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= userdata.id
+    9|         td
+    10|           a(href='/widgets/'+userdata.id) #{userdata.username}
+    11|         td= userdata.name
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:122:66)
+    at template (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:136:207)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/app/node_modules/pug/lib/index.js:464:11)
+    at View.render (/app/node_modules/express/lib/view.js:135:8)
+    at tryRender (/app/node_modules/express/lib/application.js:640:10)
+    at Function.render (/app/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/app/node_modules/express/lib/response.js:1008:7)
+    at /app/src/routes/widgets.js:50:11 {
+  path: '/app/src/views/page2.pug'
+}
+[2019-10-17T18:56:18.418] [ERROR] access - ::ffff:172.19.0.1 - - "GET /widgets/1 HTTP/1.1" 500 761 "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:56:18.452] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:56:18.454] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:56:25.780] [WARN] access - ::ffff:172.19.0.1 - - "GET /widgets HTTP/1.1" 304 - "http://localhost:8080/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:56:25.803] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T18:56:25.805] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/widgets" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:12:40.805] [ERROR] access - Something went wrong: TypeError: /app/src/views/page2.pug:8
+    6|   table
+    7|       tr
+  > 8|         td= userdata.id
+    9|         td
+    10|           a(href='/widgets/'+userdata.id) #{userdata.username}
+    11|         td= userdata.name
+
+Cannot read property 'id' of undefined
+    at eval (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:122:66)
+    at template (eval at wrap (/app/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:136:207)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/app/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/app/node_modules/pug/lib/index.js:464:11)
+    at View.render (/app/node_modules/express/lib/view.js:135:8)
+    at tryRender (/app/node_modules/express/lib/application.js:640:10)
+    at Function.render (/app/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/app/node_modules/express/lib/response.js:1008:7)
+    at /app/src/routes/widgets.js:38:9 {
+  path: '/app/src/views/page2.pug'
+}
+[2019-10-17T19:12:40.828] [ERROR] access - ::ffff:172.19.0.1 - - "GET /page2 HTTP/1.1" 500 761 "http://localhost:8080/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:12:40.856] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:12:40.858] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:12:42.992] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:12:43.065] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:12:43.065] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:17:20.052] [WARN] access - ::ffff:172.19.0.1 - - "GET / HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:17:20.095] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:17:20.097] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:17:20.820] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:17:20.859] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:17:20.860] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:18:29.536] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:18:29.566] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:18:29.567] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:18:33.415] [INFO] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 200 928 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:18:33.460] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:18:33.462] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:20.507] [INFO] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 200 1097 "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:20.541] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:20.542] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:23.236] [INFO] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 200 928 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:23.269] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:23.270] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:25.609] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:25.657] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:25.658] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:29.423] [INFO] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 200 1111 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:29.453] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:29.460] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:39.685] [INFO] access - ::ffff:172.19.0.1 - - "GET /widgets/1 HTTP/1.1" 200 1107 "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:39.728] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:39.729] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/widgets/1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:54.515] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:54.551] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:54.553] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:59.071] [INFO] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 200 1117 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:59.101] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:20:59.102] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:21:02.619] [INFO] access - ::ffff:172.19.0.1 - - "GET /widgets/3 HTTP/1.1" 200 1111 "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:21:02.657] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/widgets/3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:21:02.657] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/widgets/3" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:22:09.499] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:22:09.601] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:22:09.603] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:22:17.845] [INFO] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 200 1114 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:22:17.878] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:22:17.880] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:22:21.876] [WARN] access - ::ffff:172.19.0.1 - - "GET /page1 HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:22:21.916] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:22:21.917] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:22:25.264] [INFO] access - ::ffff:172.19.0.1 - - "POST /page2 HTTP/1.1" 200 1126 "http://localhost:8080/page1" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:22:25.317] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/css/style.css HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[2019-10-17T19:22:25.321] [WARN] access - ::ffff:172.19.0.1 - - "GET /static/js/global.js HTTP/1.1" 304 - "http://localhost:8080/page2" "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"

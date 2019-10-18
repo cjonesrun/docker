@@ -1,0 +1,8 @@
+extends index
+
+block more_content
+ div
+  form(action='/page2',method='post')
+    label(for='widgetname') widget name: 
+    input(id='widgetname',type='text',value='',placeholder='anything',name='widgetname')
+    input(type='submit',value='Fetch')
